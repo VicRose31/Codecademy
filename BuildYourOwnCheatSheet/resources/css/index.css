@@ -23,9 +23,8 @@ table {
 }
 
 th {
-    color: rgb(195, 240, 195);
-    background-image: url(../images/geometric-hive.png);
     color: rgb(195, 245, 78);
+    background-image: url(../images/geometric-hive.png); 
 }
 
 td {
@@ -35,10 +34,12 @@ td {
 
 h2 {
     text-align: center;
+    
 }
 
 .html-tag {
     font-weight: bold;
+    background-color: rgba(195, 245, 78, .8);
 }
 
 /* ----- Lists ----- */
@@ -54,6 +55,34 @@ h2 {
 
 li, .list h2 {
     color: rgb(195, 245, 78);
+    color: rgb(195, 245, 78);
+}
+
+#list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* ----- Nav ----- */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen
+}
+
+nav li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
 }
 
 

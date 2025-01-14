@@ -13,9 +13,17 @@
         <header>
             <h1>HTML Tag Reference Page</h1>
         </header>
+        <nav>
+            <ul>
+                <li><a href="#common-HTML">Common HTML Tags</a></li>
+                <li><a href="#table-tags">Table Tags</a></li>
+                <li><a href="#form-elements">Form Elements</a></li>
+                <li><a href="#list-container">Input Types and Attributes</a></li>
+            </ul>
+        </nav>
         <table>
             <thead>
-                <h2>Common HTML Element Tags</h2>
+                <h2 id="common-HTML">Common HTML Element Tags</h2>
             </thead>
             <tbody>
                 <tr>
@@ -100,7 +108,7 @@
         </table>
         <table>
             <thead>
-                <h2>Table Tags</h2>
+                <h2 id="table-tags">Table Tags</h2>
             </thead>
             <tbody>
                 <tr>
@@ -147,7 +155,7 @@
         </table>
         <table>
             <thead>
-                <h2>Form Elements</h2>
+                <h2 id="form-elements">Form Elements</h2>
             </thead>
             <tbody>
                 <tr>
@@ -156,14 +164,14 @@
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td>&lt;input&gt;</td>
+                    <td class="html-tag">&lt;input&gt;</td>
                     <td>Input</td>
                     <td>One of the most powerful elements because of number of 
                         combinations of input types and attributes
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;label&gt;</td>
+                    <td class="html-tag">&lt;label&gt;</td>
                     <td>Label</td>
                     <td>Represents a caption for an item in a user interface, has a 
                         <em>for</em> attribute which contains the id of a form-related 
@@ -171,50 +179,53 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>&lt;textarea&gt;</td>
+                    <td class="html-tag">&lt;textarea&gt;</td>
                     <td>Textarea</td>
                     <td>Represents a multi-line, plain text editing control</td>
                 </tr>
                 <tr>
-                    <td>&lt;select&gt;</td>
+                    <td class="html-tag">&lt;select&gt;</td>
                     <td>Select</td>
                     <td>Represents a control that provides a menu of options</td>
                 </tr>
                 <tr>
-                    <td>&lt;option&gt;</td>
+                    <td class="html-tag">&lt;option&gt;</td>
                     <td>Option</td>
                     <td>Nested inside &lt;select&gt; element, can have a value attribute</td>
                 </tr>
             </tbody>
         </table>
-        <div class="list">
-            <h2>Input Types</h2>
-            <ul>
-                <li>button</li>
-                <li>text</li>
-                <li>radio</li>
-                <li>checkbox</li>
-                <li>number</li>
-                <li>submit</li>
-                <li>date</li>
-                <li>email</li>
-                <li>file</li>
-                <li>color</li>
-            </ul>
+        <div id="list-container">
+            <div class="list">
+                <h2>Input Types</h2>
+                <ul>
+                    <li>button</li>
+                    <li>text</li>
+                    <li>radio</li>
+                    <li>checkbox</li>
+                    <li>number</li>
+                    <li>submit</li>
+                    <li>date</li>
+                    <li>email</li>
+                    <li>file</li>
+                    <li>color</li>
+                </ul>
+            </div>
+            <div class="list">
+                <h2>Input Attributes</h2>
+                <ul>
+                    <li>id</li>
+                    <li>name</li>
+                    <li>type</li>
+                    <li>value</li>
+                    <li>disabled</li>
+                    <li>minlength</li>
+                    <li>maxlength</li>
+                    <li>required</li>
+                </ul>
+            </div>
         </div>
-        <div class="list">
-            <h2>Input Attributes</h2>
-            <ul>
-                <li>id</li>
-                <li>name</li>
-                <li>type</li>
-                <li>value</li>
-                <li>disabled</li>
-                <li>minlength</li>
-                <li>maxlength</li>
-                <li>required</li>
-            </ul>
-        </div>
+        
         
 
         
