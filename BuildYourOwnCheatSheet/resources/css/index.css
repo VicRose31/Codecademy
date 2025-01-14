@@ -1,0 +1,60 @@
+* {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* ----- Header ----- */
+
+h1 {
+    text-align: center;
+    color: rgb(195, 245, 78);
+    padding: 30px 20px;
+}
+
+header {
+    background-image: url(../images/geometric-hive.png);
+    height: 100px;
+}
+
+/* ----- Tables ----- */
+
+table {
+    border: 3px green solid;
+    margin: auto;
+}
+
+th {
+    color: rgb(195, 240, 195);
+    background-image: url(../images/geometric-hive.png);
+    color: rgb(195, 245, 78);
+}
+
+td {
+    background-color: rgb(224, 238, 193);
+    border-top: 2px green solid;
+}
+
+h2 {
+    text-align: center;
+}
+
+.html-tag {
+    font-weight: bold;
+}
+
+/* ----- Lists ----- */
+
+.list {
+    display: inline-block;
+    margin: 20px;
+    background-image: url(../images/geometric-hive.png);
+    height: 300px;
+    width: 180px;
+    
+}
+
+li, .list h2 {
+    color: rgb(195, 245, 78);
+}
+
+
+
