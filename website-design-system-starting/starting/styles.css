@@ -22,8 +22,8 @@ header {
 }
 
 .color {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 130px;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -38,6 +38,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 10px;
+    font-size: 18px;
 }
 
 .colors-and-title {
@@ -88,9 +89,15 @@ header {
     padding-left: 20px;
 }
 
+/* Containers */
+
 .container {
     margin: 20px 50px 10px;
     
+}
+
+.container:last-of-type {
+    margin-bottom: 50px;
 }
 
 /* Texts */ 
@@ -98,17 +105,19 @@ header {
 .text-heading {
     font-weight: 700;
     font-size: 32px;
-
+    font-family: 'Schibsted Grotesk';
 }
 
 .text-subheading {
     font-weight: 600;
     font-size: 24px;
+    font-family: 'Schibsted Grotesk';
 }
 
 .text-paragraph {
     font-weight: 400;
     font-size: 16px;
+    font-family: 'Tinos';
 }
 
 .texts-and-title {
@@ -119,3 +128,4 @@ header {
     padding-left: 20px;
 
 }
+
