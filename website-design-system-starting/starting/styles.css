@@ -1,4 +1,4 @@
-/* Header */
+/* Headers */
 header {
     margin-left: 10px;
 }
@@ -11,12 +11,15 @@ header {
 .mint {
     background-color: #CAD2C5;
 }
+
 .cactus {
     background-color: #84A98C;
 }
+
 .swamp {
     background-color: #52796F;
 }
+
 .verdant {
     background-color: #354F52;
 }
@@ -30,7 +33,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
-
 }
 
 .colors-only {
@@ -87,6 +89,7 @@ header {
     outline-offset: 2px;
     border-radius: 20px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Containers */
@@ -126,6 +129,5 @@ header {
     outline-offset: 2px;
     border-radius: 20px;
     padding-left: 20px;
-
 }
 
