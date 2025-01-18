@@ -1,0 +1,121 @@
+/* Header */
+header {
+    margin-left: 10px;
+}
+
+.title {
+    font-family: 'Tinos';
+}
+
+/* Colors */
+.mint {
+    background-color: #CAD2C5;
+}
+.cactus {
+    background-color: #84A98C;
+}
+.swamp {
+    background-color: #52796F;
+}
+.verdant {
+    background-color: #354F52;
+}
+
+.color {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.colors-only {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.colors-and-title {
+    border: 2px solid #84A98C;
+    border-radius: 20px;
+    outline: 2px solid #84A98C;
+    outline-offset: 2px;
+}
+ 
+.colors-and-title > h2 {
+    margin-left: 20px;
+}
+
+/* Fonts */
+.tinos {
+    font-family: 'Tinos', serif;
+}
+
+.grotesk {
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.pinstripe {
+    font-family: 'Alumni Sans Pinstripe';
+    font-size: 25px;
+    line-height: 15px;
+    font-weight: 700px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font-name {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.fonts-and-title {
+    border: 2px solid #52796F;
+    outline: 2px solid #52796F;
+    outline-offset: 2px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.container {
+    margin: 20px 50px 10px;
+    
+}
+
+/* Texts */ 
+
+.text-heading {
+    font-weight: 700;
+    font-size: 32px;
+
+}
+
+.text-subheading {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.text-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.texts-and-title {
+    border: 2px solid #354F52;
+    outline: 2px solid #354F52;
+    outline-offset: 2px;
+    border-radius: 20px;
+    padding-left: 20px;
+
+}
