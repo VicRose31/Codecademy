@@ -1,0 +1,85 @@
+/*  Universal Styles */
+
+* {
+    font-family: Helvetica;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+p {
+    font-size: 22px;
+}
+
+
+
+/*  Header Styles  */
+
+.tea-cozy-logo {
+    margin-left: 10px;
+    height: 50px;
+    align-self: center;
+}
+
+.page-header {
+    display: flex;
+    height: 69px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    opacity: 100%;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.topnav a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/*   Page Hero Styles   */
+
+.page-hero > img {
+    height: 700px;  
+    width: 1200px;  
+}
+
+
+/* Tea of the Month */
+
+.tea-image {
+    height: 200px;
+    width: 300px;
+    margin-right: 20px;;
+}
+
+.tea-of-the-month-div {
+    display: flex;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+}
+
+.teas-of-the-month-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tea-name {
+    margin-top: 10px;
+    
+}
+
+.individual-tea-div {
+    
+}
