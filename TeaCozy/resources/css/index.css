@@ -31,12 +31,12 @@ p {
     z-index: 10;
     background-color: black;
     opacity: 100%;
+    border-bottom: 1px solid seashell;
 }
 
 .topnav {
     display: flex;
     align-items: center;
-    
 }
 
 .topnav a {
@@ -50,6 +50,7 @@ p {
 .page-hero > img {
     height: 700px;  
     width: 1200px;  
+    margin-top: 63px;
 }
 
 
@@ -63,10 +64,15 @@ p {
 
 .tea-of-the-month-div {
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
     flex-direction: column;
+}
+
+.tea-of-the-month-div > h2,
+.tea-of-the-month-div > h4 {
+    text-align: center;
 }
 
 .teas-of-the-month-container {
@@ -77,9 +83,65 @@ p {
 
 .tea-name {
     margin-top: 10px;
-    
+    text-align: center;
 }
 
 .individual-tea-div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;  
+}
+
+
+/*  Location Styles  */
+
+.locations-div {
+    display: flex;
+    background-image: url(../images/locations-background.png);
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-div > h2 {
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
     
+    
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+
+}
+
+
+/*   Contact Styles */
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 10px;
+}
+
+/*  Footer Styles   */
+
+footer {
+    opacity: 0.9;
+    text-align: left;
+    margin-left: 20px;
 }
