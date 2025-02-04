@@ -11,6 +11,12 @@ p {
     font-size: 22px;
 }
 
+h3 {
+    font-size: 25px;
+}
+
+
+
 
 
 /*  Header Styles  */
@@ -32,11 +38,13 @@ p {
     background-color: black;
     opacity: 100%;
     border-bottom: 1px solid seashell;
+    justify-content: space-between;
 }
 
 .topnav {
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .topnav a {
@@ -47,10 +55,27 @@ p {
 
 /*   Page Hero Styles   */
 
-.page-hero > img {
+.page-hero {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+
+.page-hero img {
     height: 700px;  
-    width: 1200px;  
+    max-width: 1200px; 
     margin-top: 63px;
+    
+}
+
+.mission-banner {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 90px;
 }
 
 
@@ -68,6 +93,7 @@ p {
     margin-right: auto;
     margin-left: auto;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .tea-of-the-month-div > h2,
@@ -90,6 +116,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-items: center;  
+    opacity: 1;
 }
 
 
@@ -102,6 +129,9 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .locations-div > h2 {
@@ -112,8 +142,8 @@ p {
 .location-container {
     display: flex;
     flex-direction: row;
-    
-    
+    background-color: transparent;
+    opacity: 1;
 }
 
 .location {
@@ -121,7 +151,7 @@ p {
     flex-direction: column;
     width: 300px;
     text-align: center;
-
+    margin: 20px;
 }
 
 
@@ -144,4 +174,5 @@ footer {
     opacity: 0.9;
     text-align: left;
     margin-left: 20px;
+    bottom: 0px;
 }
