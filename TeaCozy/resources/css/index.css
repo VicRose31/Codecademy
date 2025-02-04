@@ -16,9 +16,6 @@ h3 {
 }
 
 
-
-
-
 /*  Header Styles  */
 
 .tea-cozy-logo {
@@ -61,14 +58,12 @@ h3 {
     display: flex;
     position: relative;
     margin-bottom: 50px;
-    
 }
 
 .page-hero img {
     height: 700px;  
     max-width: 1200px; 
-    margin-top: 63px;
-    
+    margin-top: 63px;   
 }
 
 .mission-banner {
@@ -167,6 +162,7 @@ h3 {
 .contact {
     margin-bottom: 10px;
 }
+
 
 /*  Footer Styles   */
 
