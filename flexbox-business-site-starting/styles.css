@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    background-color: black;
+    color: rgb(209, 204, 204);
+}
+
+body {
+    
+}
+
+/* HEADER Styles */
+
+
+
+h1 {
+    font-family: 'Moirai One';
+    font-size: 5rem;
+    margin-bottom: 5px;
+    color: rgb(209, 204, 204);
+    margin-left: 60px;
+}
+
+header h2 {
+    font-family: 'Loved by the King';
+    text-transform: uppercase;
+    color: rgb(209, 204, 204);
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+header {
+    margin-bottom: 20px;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 30px;
+    top: 0;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    float: none;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(209, 204, 204);
+    text-transform: uppercase;
+}
+
+header a:hover {
+    color: rgb(184, 178, 10);
+    font-weight: bold;
+}
+
+/* MAIN Styles */
+
+main {
+    
+}
+
+
+/* GALLERY Styles */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#gallery {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 280px;
+    margin-bottom: 60px;
+    scroll-margin-top: 500px;
+}
+
+.gallery-slide {
+    width: 800px;
+    /* animation: 20s slide infinite; */
+    display: inline-block;
+}
+
+.gallery-slide img {
+    height: 500px;
+}
+
+
+/* MISSION Styles */
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 60px;
+    background-color:  rgb(184, 178, 10);
+    color: black;
+    margin-bottom: 60px;
+}
+
+.mission-text {
+    width: 1000px;
+}
+
+#mission h2 {
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+#mission h3 {
+    line-height: 24px;
+    
+}
+
+
+
+
+/* LOCATIONS Styles */
+
+#locations {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+#locations h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#locations div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#locations img {
+    height: 200px;
+    width: 300px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.location h4 {
+    font-size: 1.2rem;
+}
+
+/* TEAM Styles */
+
+#team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 80px;
+}
+
+#members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#team h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.member {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.member img {
+    height: 500px;
+    width: 350px;
+}
+
+.member h3 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.member h4 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* CONTACT Styles */
+
+#contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: rgb(184, 178, 10);
+    color: black;
+}
+
+/* FOOTER Styles */
+
+footer {
+    padding: 40px;
+    text-align: center;
+}
+
