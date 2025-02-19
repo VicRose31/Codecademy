@@ -42,6 +42,7 @@ header {
     width: 100%;
     padding-bottom: 30px;
     top: 0;
+    z-index: 50;
 }
 
 header nav {
@@ -61,7 +62,6 @@ header a {
 
 header a:hover {
     color: rgb(184, 178, 10);
-    font-weight: bold;
 }
 
 /* MAIN Styles */
@@ -82,22 +82,61 @@ main {
     }
 }
 
-#gallery {
+@keyframes galleryCycle {
+    0% { background-image: url(./images/gallery/drinks.png);}
+    12% { background-image: url(./images/gallery/burger.png);}
+    24% { background-image: url(./images/gallery/salad.png);}
+    37% { background-image: url(./images/gallery/tortilla-cips.png);}
+    50% { background-image: url(./images/gallery/bottle.png);}
+    62% { background-image: url(./images/gallery/tacos.png);}
+    75% { background-image: url(./images/gallery/tables.png);}
+    88% { background-image: url(./images/gallery/dining-room.png);}
+    100% { background-image: url(./images/gallery/drinks.png);}
+}
+
+/* #gallery {
     overflow: hidden;
     white-space: nowrap;
     margin-top: 280px;
     margin-bottom: 60px;
     scroll-margin-top: 500px;
-}
+
+    /* width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;  /
+} 
 
 .gallery-slide {
-    width: 800px;
-    /* animation: 20s slide infinite; */
-    display: inline-block;
+    width: 100%;
+    animation: 20s slide infinite; 
+    display: inline-block; 
+    /* background-size: cover;
+    background-position: center;
+    animation: galleryCycle 16s infinite; /
 }
 
 .gallery-slide img {
     height: 500px;
+}  */
+
+
+#gallery {
+    padding-top: 280px; /* */
+    padding-bottom: 30px;;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.gallery-slide {
+    display: inline-block;
+    animation: 40s slide infinite linear;
+}
+
+.gallery-slide img {
+    height: 400px; /* */
+    width: 800px;  /* */
 }
 
 
@@ -116,6 +155,7 @@ main {
     background-color:  rgb(184, 178, 10);
     color: black;
     margin-bottom: 60px;
+    scroll-margin-top: 280px;
 }
 
 .mission-text {
@@ -147,6 +187,7 @@ main {
     margin: 40px;
     padding-bottom: 60px;
     width: 100%;
+    scroll-margin-top: 280px;
 }
 
 #locations h2 {
@@ -157,6 +198,8 @@ main {
 #locations div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -183,6 +226,7 @@ main {
     justify-content: center;
     justify-items: center;
     padding-bottom: 80px;
+    scroll-margin-top: 280px;
 }
 
 #members {
