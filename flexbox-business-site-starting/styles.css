@@ -10,13 +10,8 @@ html {
     color: rgb(209, 204, 204);
 }
 
-body {
-    
-}
 
 /* HEADER Styles */
-
-
 
 h1 {
     font-family: 'Moirai One';
@@ -44,8 +39,7 @@ header {
     z-index: 50;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 }
 
 header nav {
@@ -55,8 +49,6 @@ header nav {
     text-align: right;
     margin-right: 30px; 
     margin-top: 40px; 
-
-
 }
 
 header a {
@@ -68,12 +60,6 @@ header a {
 
 header a:hover {
     color: rgb(184, 178, 10);
-}
-
-/* MAIN Styles */
-
-main {
-    
 }
 
 
@@ -88,26 +74,11 @@ main {
     }
 }
 
-@keyframes galleryCycle {
-    0% { background-image: url(./images/gallery/drinks.png);}
-    12% { background-image: url(./images/gallery/burger.png);}
-    24% { background-image: url(./images/gallery/salad.png);}
-    37% { background-image: url(./images/gallery/tortilla-cips.png);}
-    50% { background-image: url(./images/gallery/bottle.png);}
-    62% { background-image: url(./images/gallery/tacos.png);}
-    75% { background-image: url(./images/gallery/tables.png);}
-    88% { background-image: url(./images/gallery/dining-room.png);}
-    100% { background-image: url(./images/gallery/drinks.png);}
-}
-
-
-
 #gallery {
     padding-top: 230px; /* */
     padding-bottom: 30px;;
     overflow: hidden;
-    white-space: nowrap;
-    
+    white-space: nowrap;   
 }
 
 .gallery-slide {
@@ -116,8 +87,8 @@ main {
 }
 
 .gallery-slide img {
-    height: 400px; /* */
-    width: 800px;  /* */
+    height: 400px; 
+    width: 800px;  
 }
 
 
@@ -149,11 +120,8 @@ main {
 }
 
 #mission h3 {
-    line-height: 24px;
-    
+    line-height: 24px;  
 }
-
-
 
 
 /* LOCATIONS Styles */
@@ -229,8 +197,7 @@ main {
 .member {
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .member img {
