@@ -1,0 +1,131 @@
+/* PAGE COLORS */
+/*  Header background = #a6600a
+    h1 color = #1719b0
+    nav link color = #36220a
+    nav link hover = #d18e3b
+    welcome title color = #1719b0
+    welcome text color = #36220a
+    */
+
+    html {
+        font-size: 18px;
+      }
+       main {
+        background-color: #d18e3b; 
+       }   
+      
+      
+      /* HEADER Styles */
+      
+      header {
+        background-color: #a6600a;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding-bottom: 15px;
+        top: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      header h1 {
+        color: #1719b0;
+      }
+      
+      nav a {
+        text-decoration: none;
+        color: #36220a;
+        font-size: .9rem;
+      }
+      
+      nav a:hover {
+        color: #d18e3b;
+        text-decoration: underline;
+      }
+      
+      /*.WELCOME Styles */
+      
+      .welcome {
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+      }
+      
+      .welcome h2 {
+        color: #1719b0;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+      }
+      
+      
+      .welcome-text p {
+        width: 600px;
+        color: #36220a;
+      }
+      
+      
+      /* GALLERY Styles */
+      
+      .gallery {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        
+      }
+      
+      .image {
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        align-content: center;
+        background-color: orange;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      
+      /* QUOTE Styles */
+      
+      .quote {
+        width: 100%;
+      }
+      
+      blockquote {
+        background-color: #1719b0;
+        color: #d18e3b;
+        text-align: center;
+        padding: 10px;
+      
+      }
+      
+      .quote-text {
+        font-size: 1.2rem;
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
