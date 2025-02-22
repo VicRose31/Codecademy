@@ -1,74 +1,103 @@
 /* PAGE COLORS */
-/*  Header background = #a6600a
-    h1 color = #1719b0
-    nav link color = #36220a
-    nav link hover = #d18e3b
-    welcome title color = #1719b0
-    welcome text color = #36220a
-    */
+/*   #545454 = DARK GRAY
+     #e7e5e3 = SOFT WHITE
+     #ff914d = ORANGE
+      #0cc0df = AQUA BLUE
+*/
 
     html {
         font-size: 18px;
       }
        main {
-        background-color: #d18e3b; 
+        background-color: #e7e5e3; 
        }   
       
       
       /* HEADER Styles */
       
       header {
-        background-color: #a6600a;
         width: 100%;
         text-align: center;
-        height: auto;
-        padding-bottom: 15px;
         top: 0;
         position: fixed;
         display: flex;
         flex-direction: column;
+        background-color: #545454;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
       }
-      
-      header h1 {
-        color: #1719b0;
+
+      header img {
+        height: 100px;
+        width: 400px;
+        
       }
       
       nav a {
         text-decoration: none;
-        color: #36220a;
+        color: #e7e5e3;
         font-size: .9rem;
+        margin: 0 10px;
       }
       
       nav a:hover {
-        color: #d18e3b;
+        color: #ff914d;
         text-decoration: underline;
       }
       
       /*.WELCOME Styles */
       
       .welcome {
-        padding-top: 120px;
+        margin-top: 135px;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
         width: 100%;
+        background-image: url(./images/);
+        border: 6px solid #ff914d;
         
       }
       
       .welcome h2 {
-        color: #1719b0;
+        color: #0cc0df;
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
-        
+        margin-bottom: -30px;
       }
       
       
       .welcome-text p {
         width: 600px;
         color: #36220a;
+      }
+
+      .register {
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        background-color: #0cc0df;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: #e7e5e3;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background-color: #ff914d;
+        cursor: pointer;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+      .btn:active {
+        transform: translateY(2px);
+        box-shadow: 0 12px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: #d96822;
       }
       
       
@@ -77,19 +106,24 @@
       .gallery {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        flex-wrap: wrap;
         justify-content: center;
         
       }
       
       .image {
-        height: 200px;
-        width: 200px;
+
         text-align: center;
         align-content: center;
-        background-color: orange;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        background-color: #0cc0df;
+        margin: 30px;
+
+      }
+
+      .image img {
+        height: 250px;
+        width: auto;
+        padding: 10px;
       }
       
       /* QUOTE Styles */
