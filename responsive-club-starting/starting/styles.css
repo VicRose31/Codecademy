@@ -70,7 +70,7 @@ and space elements with width and padding.
         width: 100%;
         background-color:#ff914d;
         border: 6px solid #ff914d;
-        
+        padding-bottom: 80px;
       }
 
       .welcome-title {
@@ -131,22 +131,20 @@ and space elements with width and padding.
         flex-wrap: wrap;
         justify-content: center;
         background-color: #545454;
-        
+        padding: 100px 0;
       }
       
       .image {
 
         text-align: center;
         align-content: center;
-        background-color: #0cc0df;
         margin: 30px;
-
+        border: 5px solid #0cc0df;
       }
 
       .image img {
         height: 300px;
         width: 450px;
-        padding: 10px;
       }
       
       /* QUOTE Styles */
@@ -157,6 +155,8 @@ and space elements with width and padding.
         flex-wrap: wrap;
         justify-content: center;
         background-color: #0cc0df;
+        padding: 10rem;
+        border-top: 5px solid #ff914d
       }
 
       .quote {
@@ -168,11 +168,11 @@ and space elements with width and padding.
       }
       
       blockquote {
-        background-color: #1719b0;
+        background-color: #545454;
         color: #d18e3b;
         text-align: center;
         padding: 10px;
-      
+        box-shadow: 1em 1em .6em #08879d ;
       }
 
       .person {
@@ -190,6 +190,53 @@ and space elements with width and padding.
       .job {
         font-size: .8rem;
       }
+
+      /* FRIENDS GALLERY Styles */
+
+      .friends-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 8rem 0;
+        border-top: 5px solid #545454;
+        background-color:#d96822;
+      }
+
+      .friend-image img {
+        height: 300px;
+        width: 450px;
+      }
+
+      /* JOIN US Styles */
+
+      .join-us, .gym-container, .gym {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .join-us-title {
+        background-color: #545454;
+        align-items: center;    
+        border-top: 5px solid #ff914d; 
+      }
+
+      .gyms {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+
+      }
+      .gym {
+        background-color: #0cc0df;
+        height: 250px;
+        width: 250px;
+      }
+
+
 
 
 
