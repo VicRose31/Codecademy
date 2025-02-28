@@ -61,7 +61,7 @@ and space elements with width and padding.
       /*.WELCOME Styles */
       
       .welcome {
-        margin-top: 135px;
+        margin-top: 122px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -69,7 +69,7 @@ and space elements with width and padding.
         align-items: center;
         width: 100%;
         background-color:#ff914d;
-        border: 6px solid #ff914d;
+        border: 5px solid #d96822;
         padding-bottom: 80px;
       }
 
@@ -210,50 +210,127 @@ and space elements with width and padding.
         width: 450px;
       }
 
-      /* JOIN US Styles */
+      /* JOIN US & GYM Styles */
 
       .join-us, .gym-container, .gym {
         display: flex;
         flex-direction: column;
         text-align: center;
+        background-color: #545454;
       }
 
       .join-us-title {
-        background-color: #545454;
+        padding-top: 30px;
         align-items: center;    
         border-top: 5px solid #ff914d; 
+        color: #ff914d;
+        font-size: 1.6rem;
+      }
+
+      .gym-container h3 {
+        font-size: 1.6rem;
+        color: #e7e5e3;
       }
 
       .gyms {
         display: flex;
         flex-direction: row;
-        justify-content: stretch;
-
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 10px;
+        
       }
       .gym {
         background-color: #0cc0df;
-        height: 250px;
-        width: 250px;
+        height: 240px;
+        width: 240px;
+        border: 4px solid #ff914d;
+        
       }
 
+      .gym h4 {
+        font-size: 1.2rem;
 
+      }
 
+      .gym a {
+        color: black;
+      }
+
+      .gym a:hover {
+        color: #e7e5e3
+      }
 
 
 
       /* FOOTER Styles */
 
       footer {
-        background-color: #545454;
+        background-color: #d96822;
         height: 80px;
-        
+        border-top: 5px solid #545454;
+        padding-bottom: 20px;
       }
 
       footer p {
         text-align: center;
-        line-height: 1px;
-        padding-top: 20px;
+        
       }
+
+
+      /* MEDIA QUERIES */
+
+      @media only screen and (max-width: 500px) {  /* this media query not working */
+        header img{
+          display: none;
+        }
+
+        /* Make navbar flex direction column and hide logo */
+
+        .welcome {
+          width: 100%;
+        }
+
+        .welcome-text {
+          width: 70%;
+        }
+
+        .image img, .friend-image img {
+          width: 200px;
+          height: 200px;
+        }
+
+        .quote {
+          margin: 10px;
+          box-shadow: none;
+          width: 50%;
+        }
+      }
+
+      @media only screen and (max-width: 981px) {
+        .image img, .friend-image img {
+          width: 700px;
+          height: auto;
+        }
+
+        .gyms {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; 
+        }
+
+        .gym {
+          height: 300px;
+          width: 300px;
+          font-size: 1.2rem;
+          
+        }
+
+        .gym h4 {
+          font-size: 1.5rem;
+        }
+      }
+
       
       
       
