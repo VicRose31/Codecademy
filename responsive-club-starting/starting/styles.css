@@ -292,7 +292,7 @@ and space elements with width and padding.
         }
 
         .welcome-text {
-          width: 70%;
+          width: 70%;  /* make column of text narrower so that it can be read on narrow screen */
         }
 
         .image img, .friend-image img {
