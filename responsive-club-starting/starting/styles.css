@@ -135,7 +135,6 @@ and space elements with width and padding.
       }
       
       .image {
-
         text-align: center;
         align-content: center;
         margin: 30px;
@@ -155,7 +154,7 @@ and space elements with width and padding.
         flex-wrap: wrap;
         justify-content: center;
         background-color: #0cc0df;
-        padding: 10rem;
+        padding: 7rem;
         border-top: 5px solid #ff914d
       }
 
@@ -236,7 +235,7 @@ and space elements with width and padding.
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 20px;
+        gap: 40px;
         margin: 30px 10px;
         
       }
@@ -280,30 +279,36 @@ and space elements with width and padding.
 
       /* MEDIA QUERIES */
 
-      @media only screen and (max-width: 500px) {  /* this media query not working */
-        header img{
-          display: none;
-        }
-
-        /* Make navbar flex direction column and hide logo */
-
+      @media only screen and (max-width: 640px) {  
+        
         .welcome {
           width: 100%;
+          text-align: center;
         }
 
-        .welcome-text {
-          width: 70%;  /* make column of text narrower so that it can be read on narrow screen */
+        .welcome-text p {
+          width: 80%;  
+          margin: auto;
+          margin-bottom: 30px;
+        }
+
+        .image, .friend-image  {
+          width: 95%;
+          overflow: hidden;
         }
 
         .image img, .friend-image img {
-          width: 200px;
-          height: 200px;
+          width: 95%;
+          height: auto;
         }
 
         .quote {
-          margin: 10px;
-          box-shadow: none;
-          width: 50%;
+          margin-left: -90px;
+        }
+
+        blockquote {
+         width: 100%;
+         
         }
       }
 
