@@ -26,47 +26,44 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 // Add your functions below:
 
 //Function that validates credit card numbers by using Luhn algorithm
+//start sum with numeric value of last element of array
+//start counter at 0, which will start to count at penultimate element of array
+//starting at penultimate element, loop through array using decrementer 
+//check counter to see if counter is even or odd
+//even counter values get multiplied by two and added to sum
+//if the multiplied value is greater than 9, subtract 9 from sum
+//else, odd counter values get added to sum
+//increment counter by 1 every time the loop completes
+//return true if sum modulo 10 has remainder of 0, else return false
 const validateCred = array => {
-    //start sum with numeric value of last element of array
     let sum = array[array.length-1];
-
-    //start counter at 0, which will start to count at penultimate element of array
     let counter = 0;
 
-    //starting at penultimate element, loop through array using decrementer 
     for (let i = array.length - 2; i >= 0; i--) {
-
-        //check counter to see if counter is even or odd
         if (counter % 2 === 0) {
-            //even counter values get multiplied by two and added to sum
             let timesTwo = array[i] * 2;
             sum += timesTwo;
-            //if the multiplied value is greater than 9, subtract 9 from sum
+
             if (timesTwo > 9) {
                 sum -= 9;
             }
         } else {
-            //odd counter values get added to sum
             sum += array[i];
         }
-
-        //increment counter by 1 every time the loop completes
         counter++;
     }
-
-    //return true if sum modulo 10 has remainder of 0, else return false
     return (sum % 10 === 0 ? console.log('true') : console.log('false'));
 }
 
 //Test validateCred function
-//validateCred(invalid3);
+//validateCred(valid5);
 
-//Function that finds invalid credit card numbers
-const findInvalidCards = nestedArray => {
+//Function that finds invalid credit card numbers and returns array of invalid cards
+const findInvalidCards = array => {
     const invalidCards = [];
-    for (let i = 0; i < nestedArray.length; i++) {
-        if (validateCred(nestedArray[i]) === false) {
-            invalidCards.push(nestedArray[i]);
+    for (let i = 0; i < array.length; i++) {
+        if (!validateCred(array[i])) {
+            invalidCards.push(array[i]);
         }
     }
     return invalidCards;
@@ -95,7 +92,7 @@ const idInvalidCardCompanies = nestedArray => {
                 company = 'Discover';
                 break;
             default:
-                console.log('Company not found');
+                company = 'Company not found';
         }
         if (!faultyCardCompanies.includes(company)) {
             faultyCardCompanies.push(company);
@@ -109,6 +106,20 @@ const idInvalidCardCompanies = nestedArray => {
 //idInvalidCardCompanies(batch);
 
 
+//Function that validates credit card numbers by using Luhn algorithm
+const validateCredString = param => {
+    //change string parameter to array of numbers
+    //split string into array, separating every character as an individual element
+    //then map each element of array to new array as a Number
+    const array = param.split('').map(Number);
+    return array;
+}
 
+//Test valididateCredString function 
+validateCred(validateCredString('6561270509757527'));
+
+
+
+//Additional Challenge: Create a function that will convert invalid numbers into valid numbers.
 
 
