@@ -49,7 +49,31 @@ const pAequorFactory = (num, array) => {
       }
       const percent = (cAndGs / this.dna.length) * 100;
       return (percent >= 60 ? true : false);
+    },
+
+    complementStrand() {
+      const newStrand = [];
+      for (let base of this.dna) {
+        let newBase = '';
+        switch (base) {
+          case 'A':
+            newBase =  'T';
+            break;
+          case 'T':
+            newBase = 'A';
+            break;
+          case 'C':
+            newBase = 'G';
+            break;
+          case 'G':
+            newBase = 'C';
+            break;      
+        }
+        newStrand.push(newBase);
+      }
+      return newStrand;
     }
+
   }
 }
 
@@ -68,8 +92,12 @@ function create30 () {
   }
 }
 
-create30();
-console.log(pAequorArray);
+//create30();
+//console.log(pAequorArray);
+//const first = pAequorFactory(1, mockUpStrand());
+//console.log(first.dna);
+//console.log(first.complementStrand());
+
 
 
 
